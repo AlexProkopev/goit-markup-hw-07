@@ -1,4 +1,4 @@
-/* Цвет основного текста #2E2F42 */
+Цвет основного текста #2E2F42
 
 /* Вторичный цвет текста,абзацев #434455; */
 
@@ -265,6 +265,8 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .hero .hero-title {

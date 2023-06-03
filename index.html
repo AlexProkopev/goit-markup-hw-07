@@ -15,7 +15,7 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/styles-adaptation.css" />
   </head>
 
   <body>
@@ -23,8 +23,8 @@
     <header class="header">
       <!--Логотип с ссылкой-->
 
-      <div class="container header-container">
-        <nav class="nav">
+      <div class="container header-container-desctop header-container">
+        <nav class="nav nav-desctop">
           <a href="./index.html" class="logo link"
             >Web<span class="logo-text">Studio</span></a
           >
@@ -46,88 +46,133 @@
         <!--Контакты для связи-->
 
         <address class="contact">
-          <ul class="contact-list list">
-            <li class="contact-item item">
+          <ul class="contact-list list contact-list-dectrop">
+            <li class="contact-item-desctop contact-item-tablet item">
               <a href="mailto:info@devstudio.com" class="contact-link link"
                 >info@devstudio.com</a
               >
             </li>
-            <li class="contact-item item">
+            <li class="contact-item-desctop contact-item-tablet item">
               <a href="tel:+110001111111" class="contact-link link"
                 >+11 (000) 111-11-11</a
               >
             </li>
           </ul>
         </address>
+        <button
+          type="button"
+          class="button-open-menu js-open-menu"
+          aria-expanded="false"
+        >
+          <svg width="32" height="22" class="icons-button-open-menu">
+            <use href="./images/icons.svg#icon-menu-burger"></use>
+          </svg>
+        </button>
       </div>
     </header>
 
     <main>
-      <!--Главный заголовок,герой-->
+      <!-- Главный заголовок,герой-->
 
-      <section class="hero">
-        <div class="container">
-          <h1 class="hero-title">Effective Solutions for Your Business</h1>
-          <button type="button" class="hero-button" data-modal-open>
+      <section class="hero-mobile hero-tablet hero-desctop">
+        <div
+          class="container container-mobile container-tablet container-desctop"
+        >
+          <h1 class="hero-title-mobile hero-title-tablet">
+            effective solutions for your business
+          </h1>
+          <button type="button" class="hero-button-mobile" data-modal-open>
             Order Service
           </button>
         </div>
       </section>
 
       <!--Особенности-->
-      <section class="section">
-        <div class="container">
+      <section class="section-features-mobile">
+        <div class="container container-mobile">
           <h2 hidden class="hidden-title">features</h2>
 
-          <ul class="features-list list">
-            <li class="features-item icon-anten">
+          <ul class="features-list-tablet featires-list-desctop list">
+            <li
+              class="features-item-mobile features-item-tablet icon-anten featires-item-desctop"
+            >
               <div class="container-features-icon">
                 <svg width="64" height="64">
                   <use href="./images/icons.svg#icon-anten"></use>
                 </svg>
               </div>
 
-              <h3 class="features-title">Strategy</h3>
-              <p class="features-text">
+              <h3
+                class="features-title-mobile features-title-tablet features-title-desctop"
+              >
+                Strategy
+              </h3>
+              <p
+                class="features-text-mobile features-text-tablet features-text-desctop"
+              >
                 Our goal is to identify the business problem to walk away with
                 the perfect and creative solution.
               </p>
             </li>
-            <li class="features-item icon-clock">
+            <li
+              class="features-item-mobile features-item-tablet icon-clock featires-item-desctop"
+            >
               <div class="container-features-icon">
                 <svg width="64" height="64">
                   <use href="./images/icons.svg#icon-clock"></use>
                 </svg>
               </div>
 
-              <h3 class="features-title">Punctuality</h3>
-              <p class="features-text">
+              <h3
+                class="features-title-mobile features-title-tablet features-title-desctop"
+              >
+                Punctuality
+              </h3>
+              <p
+                class="features-text-mobile features-text-tablet features-text-desctop"
+              >
                 Bring the key message to the brand's audience for the best price
                 within the shortest possible time.
               </p>
             </li>
-            <li class="features-item icon-diagram">
+            <li
+              class="features-item-mobile features-item-tablet icon-diagram featires-item-desctop"
+            >
               <div class="container-features-icon">
                 <svg width="64" height="64">
                   <use href="./images/icons.svg#icon-diagram"></use>
                 </svg>
               </div>
 
-              <h3 class="features-title">Diligence</h3>
-              <p class="features-text features-text-item">
+              <h3
+                class="features-title-mobile features-title-tablet features-title-desctop"
+              >
+                Diligence
+              </h3>
+              <p
+                class="features-text-mobile features-text-item features-text-tablet features-text-desctop"
+              >
                 Research and confirm brands that present the strongest digital
                 growth opportunities and minimize risk.
               </p>
             </li>
-            <li class="features-item icon-astronaut">
+            <li
+              class="features-item-mobile features-item-tablet icon-astronaut featires-item-desctop"
+            >
               <div class="container-features-icon">
                 <svg width="64" height="64">
                   <use href="./images/icons.svg#icon-astronaut"></use>
                 </svg>
               </div>
 
-              <h3 class="features-title">Technologies</h3>
-              <p class="features-text">
+              <h3
+                class="features-title-mobile features-title-tablet features-title-desctop"
+              >
+                Technologies
+              </h3>
+              <p
+                class="features-text-mobile features-text-tablet features-text-desctop"
+              >
                 Design practice focused on digital experiences. We bring forth a
                 deep passion for problem-solving.
               </p>
@@ -141,13 +186,20 @@
       <section class="section section-padding">
         <div class="container">
           <h2 class="section-caption">What are we doing</h2>
+
+          <picture>
+            <source srcset="./images" />
+          </picture>
           <ul class="meny-list list">
             <li class="meny-item">
-              <img
-                src="./images/wawd1.jpg"
-                alt="Computer with screen on"
-                width="360"
-              />
+              <!-- <picture>
+                <source srcset="./images/contact1@2x.jpg 2x" type="image/jpg" />
+                <source
+                  srcset="./images/contact1@2x.webp 2x"
+                  type="image/webp"
+                />
+                <img src="./images/contact1.jpg" alt="" /> -->
+              </picture>
             </li>
             <li class="meny-item">
               <img
@@ -169,7 +221,7 @@
 
       <!--Наша команда-->
 
-      <section class="section section-team">
+      <!-- <section class="section section-team">
         <div class="container">
           <h2 class="team-title">Our Team</h2>
           <ul class="team-list list">
@@ -347,11 +399,11 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
 
       <!-- ----------------- КЛИЕНТЫ -------------- -->
 
-      <section class="section-costumers">
+      <!-- <section class="section-costumers">
         <div class="container">
           <h2 class="title-costumers">Customers</h2>
 
@@ -403,10 +455,10 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
     </main>
     <!--Подвал сайта-->
-    <footer class="footer">
+    <!-- <footer class="footer">
       <div class="container footer-container">
         <div class="footer-container-text">
           <a href="./index.html" class="logo-footer link"
@@ -451,9 +503,9 @@
               </a>
             </li>
           </ul>
-        </div>
-        <!-- ----------FORM------------------ -->
-        <div class="container-form">
+        </div> -->
+    <!-- ----------FORM------------------ -->
+    <!-- <div class="container-form">
           <p class="subscribe-text">Subscribe</p>
 
           <form class="form-list-footer">
@@ -476,11 +528,11 @@
           </form>
         </div>
       </div>
-    </footer>
+    </footer> -->
 
     <!-- ------------------МОДЕЛЬНОЕ ОКНО----------------- -->
 
-    <div class="backdrop is-hidden" data-modal>
+    <!-- <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button
           type="button"
@@ -584,10 +636,80 @@
           <button type="submit" class="send-btn-form">Send</button>
         </form>
       </div>
-    </div>
+    </div> -->
 
     <!-- -----------СКРИПТ МОДЕЛЬНОГО ОКНА---------------- -->
 
+    <!-- МЕНЮШКА НА МОБ ВЕРСИИ -->
+
+    <div class="menu-backdrop js-menu-container">
+      <div class="container container-menu">
+        <button type="button" class="btn-close-menu js-close-menu">
+          <svg width="8" height="8" class="icons-btn-close-menu">
+            <use href="./images/icons.svg#icon-close-black"></use>
+          </svg>
+        </button>
+        <ul class="list">
+          <li class="menu-items">
+            <a href="./index.html" class="menu-link link">Studio</a>
+          </li>
+          <li class="menu-items">
+            <a href="./portfolio.html" class="menu-link link">Portfolio</a>
+          </li>
+          <li class="menu-items">
+            <a href="" class="menu-link link">Contacts</a>
+          </li>
+        </ul>
+
+        <div class="contact-icon-items">
+          <ul class="contact-menu-list list">
+            <li class="contact-item">
+              <a href="tel:+110001111111" class="contact-link link"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+            <li class="contact-item">
+              <a href="mailto:info@devstudio.com" class="contact-link-mail link"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+
+          <ul class="icon-menu-list list">
+            <li class="icon-menu-item">
+              <a href="#" class="icon-menu-link link">
+                <svg class="icon-menu" width="16" height="16">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="icon-menu-item">
+              <a href="#" class="icon-menu-link link">
+                <svg class="icon-menu" width="16" height="16">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="icon-menu-item">
+              <a href="#" class="icon-menu-link link">
+                <svg class="icon-menu" width="16" height="16">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="icon-menu-item">
+              <a href="#" class="icon-menu-link link">
+                <svg class="icon-menu" width="16" height="16">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

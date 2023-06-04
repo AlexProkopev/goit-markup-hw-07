@@ -771,9 +771,9 @@ a {
 }
 
 .backdrop.is-hidden {
-  opacity: 1;
+  opacity: 0;
   pointer-events: none;
-  visibility: visible;
+  visibility: hidden;
 }
 
 .modal {

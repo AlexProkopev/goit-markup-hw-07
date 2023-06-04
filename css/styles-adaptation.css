@@ -789,10 +789,15 @@ a {
   border-radius: 4px;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-  padding-left: 24px;
-  padding-right: 24px;
+  padding-left: 16px;
+  padding-right: 16px;
   padding-top: 72px;
   padding-bottom: 24px;
+}
+@media screen and (max-width: 427px) {
+  .modal {
+    max-width: 95vw;
+  }
 }
 
 .close-model-btn {
@@ -955,6 +960,11 @@ a {
   margin-bottom: 24px;
 }
 
+.privacy-link {
+  display: inline-block;
+  color: var(--button-color);
+}
+
 .accept-text {
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
@@ -962,10 +972,6 @@ a {
   line-height: 1.17;
   letter-spacing: 0.04em;
   color: var(--form-text-color);
-}
-
-.privacy-link {
-  color: var(--button-color);
 }
 
 .span-form-svg-privacy {
@@ -1233,6 +1239,12 @@ a {
 
   .footer-social-media-text {
     text-align: start;
+  }
+
+  .modal {
+    width: 408px;
+    padding-left: 23px;
+    padding-right: 25px;
   }
 }
 

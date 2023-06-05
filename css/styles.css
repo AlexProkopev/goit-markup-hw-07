@@ -871,11 +871,6 @@ body {
   transform: translateY(0px);
 }
 
-.img-adaptation {
-  max-width: 100%;
-  height: auto;
-}
-
 /* ------------------------МОДАЛЬНОЕ ОКНО И БЕКДРОП ----------------------- */
 
 .backdrop {
